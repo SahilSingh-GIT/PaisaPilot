@@ -1,0 +1,10 @@
+ollama run llama3.2:1b
+
+
+ollama ps
+
+
+ollama stop llama3.2:1b
+Stop-Process -Name "ollama" -Force
+
+npm run dev
