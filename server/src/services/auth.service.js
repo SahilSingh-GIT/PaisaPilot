@@ -35,7 +35,7 @@ export function verifyRefreshToken(token) {
 export const COOKIE_CONFIG = {
   httpOnly: true,
   secure: ENV.isProd,
-  sameSite: ENV.isProd ? 'strict' : 'lax', // Use lax in dev for localhost cross-port
+  sameSite: ENV.isProd ? 'none' : 'lax',
 };
 
 export function setAuthCookies(res, accessToken, refreshToken) {
